@@ -1,0 +1,83 @@
+.all-post-card {
+  height: 110px;
+  margin: 5px 10px 0 10px;
+  padding: 10px;
+  background-color: #f5f0f6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  
+  p {
+    margin: 15px 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+  }
+  
+  h5 {
+    font-size: 14px;
+    font-weight: 300;
+    color: #2bb2bb;
+    margin-bottom: 5px;
+  }
+  
+  p, h6 {
+    color: #5c6061;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .all-post-card {
+    // width: ;
+    min-height: 400px;
+    max-height: 550px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #f5f0f6;
+    display: flex;
+    flex-direction: column;
+}
+}
+
+.post-card-image {
+  margin: 0 auto;
+  width: 150px;
+  height: 100px;
+}
+
+.post-card-contents {
+  width: 50%;
+  padding: 5px;
+  margin: 0 auto;
+  overflow: scroll;
+
+  p {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .post-card-image {
+    width: 100%;
+    height: 150px;
+  }
+  
+    .post-card-contents {
+    width: 80%;
+    min-height: 220px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    p {
+      display: block;
+    }
+}
+}

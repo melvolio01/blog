@@ -1,0 +1,36 @@
+.other-posts {
+  width: 400px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  .post {
+    min-height: 80px;
+  }
+}
+
+.author {
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0.8;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 5px;
+  letter-spacing: 0;
+  color: #2bb2bb;
+}
+
+.all-posts-btn {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  font-size: 16px;
+  color: #2bb2bb;
+  border: 1px solid #2bb2bb;
+  padding: 10px;
+  opacity: 0.5;
+  letter-spacing: 1px;
+
+  &:hover {
+    opacity: 1;
+  }
+}

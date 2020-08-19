@@ -1,26 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
+import {
+  Route,
+  Switch
+} from 'react-router-dom';
+import Home from './components/Home/Home';
+import Header from './components/Header/Header';
+import AllPosts from './components/AllPosts/AllPosts';
+import SelectedPost from './components/SelectedPost/SelectedPost';
+import { posts } from './data';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+        <Header />
+        <Switch>
+          <Route path="/" exact>
+            <Home posts={posts} />
+          </Route>
+          <Route path="/all">
+            <AllPosts posts={posts} />
+          </Route>
+          <Route path="/posts/:id" exact>
+            <SelectedPost posts={posts} />
+          </Route>
+          <Route path="*">
+            <div className="text-center">
+              <h1 >404</h1>
+              <h2 >Oops, page not found</h2>
+            </div>
+          </Route>
+        </Switch>
+      </div>
   );
-}
+};
 
 export default App;
+
+
+

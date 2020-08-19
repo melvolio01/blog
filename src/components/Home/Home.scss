@@ -1,0 +1,145 @@
+a {
+  color: inherit; 
+  text-decoration: none;
+} 
+
+body {
+  background-color: #f5f0f6;
+  width: 100vw;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.home-image-container {
+  position: relative;
+  text-align: center;
+}
+
+.posts-btn {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px;
+  font-size: 16px;
+  width: 150px;
+  color: #fff;
+  background-color: #7cc4be;
+  cursor: pointer;
+  border: none;
+  font-weight: 400;
+  letter-spacing: 1px;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.home-image {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.topics {
+  width: 100%;
+  height: 600px;
+  background-color:#94bacd;
+  color: #fff;
+  margin-top: -5px;
+  padding-top: 50px;
+
+  p {
+    margin-left: 10%;
+  }
+}
+
+.recent-posts {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+  position: relative;
+  width: 90vw;
+  min-height: 170vh;
+  margin: 25% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #5c6061;
+    font-weight: 100;
+    font-size: 22px;
+  }
+}
+
+
+@media only screen and (min-width: 750px) {
+  .recent-posts {
+    margin: 18% auto;
+    width: 80vw;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .recent-posts {
+    width: 80vw;
+  }
+  
+  .bg {
+    width: 60vw;
+  }
+  
+}
+
+
+@media only screen and (min-width: 1300px) {
+  .recent-posts {
+    margin: 10% auto;
+    display: flex;
+    flex-direction: row;
+    min-height: 80vh;
+    width: 80vw;
+  }
+  
+  .bg { 
+    width: 60%;
+  } 
+}
+
+.primary-post {
+  width: 60%;
+}
+
+@media only screen and (min-width: 1400px) {
+  .recent-posts {
+    margin: 10% auto;
+    width: 80vw;
+  }
+  
+  .bg {
+    width: 45vw;
+  }
+
+}
+
+
+.post {
+  height: 15%;
+}
+
+.text-center {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 200;
+  font-family: 'Montserrat', sans-serif;
+  color: #2bb2bb;
+}
+
+.featured-post {
+  width: 80%;
+  background-color: plum;
+}
